@@ -1,0 +1,39 @@
+import Produto from "../components/produto";
+import { useState, useEffect } from "react";
+import Lista from "../components/produto/lista";
+import "../components/produto/produto.css";
+
+export default function Produtos() {
+  const [produtos, setProdutos] = useState([]);
+
+  useEffect(async () => {
+    const resposta = await fetch("http://localhost:4000/produtos");
+    const dados = await resposta.json();
+    setProdutos(dados);
+  }, []);
+
+  return (
+    <div className="bg-dark">
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-lg-3 col-md-12 my-3">
+            <Lista />
+          </div>
+          <div className="col-lg-9 col-md-12">
+            <div className="row justify-content-center">
+              {produtos &&
+                produtos.map((item) => (
+                  <Produto
+                    imagem={item.imagem}
+                    descricao={item.Descricao}
+                    preco={item.preco}
+                    categoria={item.categoria}
+                  />
+                ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

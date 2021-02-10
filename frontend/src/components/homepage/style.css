@@ -1,0 +1,44 @@
+.fundo{
+    height: 95vh;
+    background-color: #343a40;
+    background-size: 100%;
+}
+
+.tecWeb{
+    width: 25vh;
+    margin: 30px;
+}
+.tecWeb1{
+    width: 25vh;
+    margin: 30px;
+}
+@media(max-width: 1280px){
+    .tecWeb{
+        width: 15vh;
+        margin: 10px;
+    }
+    .tecWeb1{
+        width: 15vh;
+        margin: 10px;
+    }
+}
+@media(max-width: 470px){
+    .fundo{
+        height: 110vh;
+    }
+}
+@media (prefers-reduced-motion: no-preference) {
+    .tecWeb1 {
+      animation: tecWeb1-spin infinite 60s linear;
+    }
+}
+
+@keyframes tecWeb1-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

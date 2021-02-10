@@ -1,0 +1,11 @@
+.app {
+   font-family: 'Montserrat', sans-serif;
+}
+::-webkit-scrollbar {
+   width: 5px;
+   background-color: #343a40;
+}
+::-webkit-scrollbar-thumb {
+   background-color: #DC3545;
+}
+
