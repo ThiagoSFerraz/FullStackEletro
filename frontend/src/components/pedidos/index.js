@@ -1,4 +1,5 @@
-import { ListGroup, ListGroupItem, Row, Col } from 'react-bootstrap'
+import { ListGroup } from 'react-bootstrap'
+import React from 'react'
 
 export default function Pedido(props){
     return(
