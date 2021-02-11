@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c49d92f9.chunk.css",
+    "main.js": "/static/js/main.118ae653.chunk.js",
+    "main.js.map": "/static/js/main.118ae653.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a5c32580.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a5c32580.js.map",
+    "static/css/2.150d169a.chunk.css": "/static/css/2.150d169a.chunk.css",
+    "static/js/2.477ef56b.chunk.js": "/static/js/2.477ef56b.chunk.js",
+    "static/js/2.477ef56b.chunk.js.map": "/static/js/2.477ef56b.chunk.js.map",
+    "static/js/3.2db8fba7.chunk.js": "/static/js/3.2db8fba7.chunk.js",
+    "static/js/3.2db8fba7.chunk.js.map": "/static/js/3.2db8fba7.chunk.js.map",
+    "static/js/4.630efc34.chunk.js": "/static/js/4.630efc34.chunk.js",
+    "static/js/4.630efc34.chunk.js.map": "/static/js/4.630efc34.chunk.js.map",
+    "static/js/5.b3eaca01.chunk.js": "/static/js/5.b3eaca01.chunk.js",
+    "static/js/5.b3eaca01.chunk.js.map": "/static/js/5.b3eaca01.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.150d169a.chunk.css.map": "/static/css/2.150d169a.chunk.css.map",
+    "static/css/main.c49d92f9.chunk.css.map": "/static/css/main.c49d92f9.chunk.css.map",
+    "static/js/2.477ef56b.chunk.js.LICENSE.txt": "/static/js/2.477ef56b.chunk.js.LICENSE.txt",
+    "static/media/atom.png": "/static/media/atom.1c0eaa5f.png",
+    "static/media/fogao1.png": "/static/media/fogao1.070d053b.png",
+    "static/media/fogao2.png": "/static/media/fogao2.72cee0d5.png",
+    "static/media/geladeira1.png": "/static/media/geladeira1.a01fcdd1.png",
+    "static/media/geladeira2.png": "/static/media/geladeira2.02d9ff75.png",
+    "static/media/geladeira3.png": "/static/media/geladeira3.1279df70.png",
+    "static/media/lavalouca1.webp": "/static/media/lavalouca1.330d2655.webp",
+    "static/media/lavalouca2.png": "/static/media/lavalouca2.fe12be15.png",
+    "static/media/lavaroupa1.png": "/static/media/lavaroupa1.523ef007.png",
+    "static/media/lavaroupa2.webp": "/static/media/lavaroupa2.337d2558.webp",
+    "static/media/microondas1.png": "/static/media/microondas1.0a857cb3.png",
+    "static/media/microondas2.png": "/static/media/microondas2.89ae9904.png",
+    "static/media/microondas3.webp": "/static/media/microondas3.41642636.webp",
+    "static/media/nodejs-icon.png": "/static/media/nodejs-icon.5dd2385a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a5c32580.js",
+    "static/css/2.150d169a.chunk.css",
+    "static/js/2.477ef56b.chunk.js",
+    "static/css/main.c49d92f9.chunk.css",
+    "static/js/main.118ae653.chunk.js"
+  ]
+}
