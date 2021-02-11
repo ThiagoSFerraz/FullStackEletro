@@ -1,7 +1,7 @@
-
-import { useState, useEffect, lazy, Suspense } from "react";
+import { useState, useEffect, lazy, Suspense} from "react";
 import { Container, Row, Col } from "react-bootstrap";
 const Pedido = lazy(() => import("../components/pedidos"));
+
 
 // PÁGINA COM CONSULTA JOIN
 
