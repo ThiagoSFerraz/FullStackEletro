@@ -1,12 +1,12 @@
 import { Navbar, Nav } from 'react-bootstrap';
 import { Link, withRouter } from 'react-router-dom';
-import './menu.css';
+
 
 
 function BaseMenu(props) {
     const { location } = props
     return(
-
+        
         <Navbar className="navbar" bg="danger" expand="lg">
             <Navbar.Brand className=" text-white">
                 FullStackEletro &copy;
