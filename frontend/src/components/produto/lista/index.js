@@ -1,5 +1,5 @@
 import { ListGroup, ListGroupItem } from 'react-bootstrap'
-import './lista.css'
+
 
 
 export default function Lista(){
@@ -7,12 +7,12 @@ export default function Lista(){
         
                 
                     <ListGroup className="text-white">
-                        <ListGroup.Item className="lista">Todos (9)</ListGroup.Item>
-                        <ListGroup.Item className="lista">Geladeira (3)</ListGroup.Item>
-                        <ListGroup.Item className="lista">Fogão (2)</ListGroup.Item>
-                        <ListGroup.Item className="lista">Microondas (2)</ListGroup.Item>
-                        <ListGroup.Item className="lista">Lava Roupas (1)</ListGroup.Item>
-                        <ListGroup.Item className="lista">Lava Louças (1)</ListGroup.Item>
+                        <ListGroup.Item className="bg-dark border border-danger">Todos (9)</ListGroup.Item>
+                        <ListGroup.Item className="bg-dark border border-danger">Geladeira (3)</ListGroup.Item>
+                        <ListGroup.Item className="bg-dark border border-danger">Fogão (2)</ListGroup.Item>
+                        <ListGroup.Item className="bg-dark border border-danger">Microondas (2)</ListGroup.Item>
+                        <ListGroup.Item className="bg-dark border border-danger">Lava Roupas (1)</ListGroup.Item>
+                        <ListGroup.Item className="bg-dark border border-danger">Lava Louças (1)</ListGroup.Item>
                     </ListGroup>
                 
        
