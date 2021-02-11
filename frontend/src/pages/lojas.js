@@ -1,5 +1,7 @@
-import ListaLoja from '../components/lojas'
+import {lazy, Suspense} from 'react'
 import '../components/lojas/lojas.css'
+const ListaLoja = lazy(() => import('../components/lojas'))
+
 
 
 export default function Lojas() {
@@ -11,7 +13,10 @@ export default function Lojas() {
                     <h1>Essas são nossas localizações!</h1>
                 </div>
             </div>
-            <ListaLoja/>
+            {/* Lazy Loading */}
+            <Suspense fallback={<h2 className="text-white text-center">Carregando...</h2>}>
+                <ListaLoja/>
+            </Suspense>
         </div>
     </div>
     )
