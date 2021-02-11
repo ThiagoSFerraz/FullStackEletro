@@ -1,6 +1,4 @@
 import {ListGroup} from 'react-bootstrap'
-import './lojas.css'
-
 export default function ListaLoja(){
     return(
         <div className="row justify-content-center">
