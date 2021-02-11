@@ -1,8 +1,9 @@
-import Produto from "../components/produto";
-import { useState, useEffect, lazy, Suspense } from "react";
-import "../components/produto/produto.css";
+import { useState, useEffect, lazy, Suspense, } from "react";
+import React from 'react';
+import Lista from '../components/produto/lista'
 
-const Lista = lazy (() => import('../components/produto/lista'))
+
+const Produto = lazy (() => import('../components/produto'))
 
 export default function Produtos() {
   const [produtos, setProdutos] = useState([]);
@@ -18,20 +19,22 @@ export default function Produtos() {
       <div className="container-fluid">
         <div className="row">
           <div className="col-lg-3 col-md-12 my-3">
-            <Suspense fallback={<h3 className="text-white text-center">Carregando categorias...</h3>}>
+            {/* Lista está sendo renderizada em SSR */}
               <Lista />
-            </Suspense>
+            
           </div>
           <div className="col-lg-9 col-md-12">
             <div className="row justify-content-center">
               {produtos &&
                 produtos.map((item) => (
+                  <Suspense fallback={<h3 className="text-white text-center">Carregando categorias...</h3>}>
                   <Produto
                     imagem={item.imagem}
                     descricao={item.Descricao}
                     preco={item.preco}
                     categoria={item.categoria}
                   />
+                  </Suspense>
                 ))}
             </div>
           </div>
