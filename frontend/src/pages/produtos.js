@@ -1,7 +1,8 @@
 import Produto from "../components/produto";
-import { useState, useEffect } from "react";
-import Lista from "../components/produto/lista";
+import { useState, useEffect, lazy, Suspense } from "react";
 import "../components/produto/produto.css";
+
+const Lista = lazy (() => import('../components/produto/lista'))
 
 export default function Produtos() {
   const [produtos, setProdutos] = useState([]);
@@ -17,7 +18,9 @@ export default function Produtos() {
       <div className="container-fluid">
         <div className="row">
           <div className="col-lg-3 col-md-12 my-3">
-            <Lista />
+            <Suspense fallback={<h3 className="text-white text-center">Carregando categorias...</h3>}>
+              <Lista />
+            </Suspense>
           </div>
           <div className="col-lg-9 col-md-12">
             <div className="row justify-content-center">
