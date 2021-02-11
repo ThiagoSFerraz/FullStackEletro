@@ -1,5 +1,8 @@
 import '../components/homepage/style.css'
+import {lazy, Suspense} from 'react'
 
+
+const Tecnologias = lazy(() => import('../components/homepage'))
 
 
 export default function Home(){
@@ -22,31 +25,13 @@ export default function Home(){
                     <div className="col-lg-10 mt-4">
                         <p>Tecnologias usadas no site</p>
                     </div>
-                    <div className="col-lg-12">
-                        <img className="tecWeb1 mt-lg-5" src={require('../components/homepage/img/atom.png').default}/>
-                        <img className="tecWeb mx-lg-5 mt-lg-5" src={require('../components/homepage/img/nodejs-icon.png').default}/>
-                        <img className="tecWeb mt-lg-5" src={require('../components/homepage/img/mongo.png').default}/>
-                    </div>     
+                    {/* Lazy Loading */}
+                    <Suspense fallback={ <p>Carregando...</p>}>
+                        <Tecnologias />
+                    </Suspense>
                 </div>
-                                   
+                            
                 
             </div>
-
-
-        // <div className="bg-dark">
-        // <div className="homepg jumbotron bg-dark text-center font-weight-bold rounded-0">
-        //     <h1 className="display-1 text-white">Seja bem vindo!</h1>
-        //     <p className="lead text-white">Aqui em nossa loja, <em class="font-weight-bold">programadores tem desconto</em> nos produtos para sua casa!</p>
-        //     <hr/>
-        //     <p className="text-white">Venha conhecer nossos produtos!</p>
-        //     <a className="btn btn-danger col-6 btn-lg" href="/produtos" role="button">Nossos Produtos!</a>
-        // </div>
-        // <div className="cartao jumbotron bg-dark text-center font-weight-bold rounded-0">
-        //     <h1 className="display-3 text-white">Aceitamos as principais bandeiras!</h1>
-        //     <img src={require(`../components/homepage/cartaocred.png`).default} className="w-25" alt="Bandeiras de cartão" />
-        // </div>
-            
-        
-        // </div>
     )
 }
