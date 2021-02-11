@@ -1,0 +1,11 @@
+.fundo{
+    height: 95vh;
+    background-color: #343a40;
+    background-size: 100vh;
+}
+
+@media(max-width: 480px){
+    .fundo{
+        height: 110vh;
+    }
+}
