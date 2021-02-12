@@ -1,6 +1,6 @@
 # Bem vindo ao projeto **Full Stack Eletro**
 ## Esse projeto tem como propóstio a entregas das atividades de **React back-end e front-end avançado e noSQL(mongodb)** e também como portfólio.
-#
+
 ## **Como rodar o projeto:**
 1. Clone o projeto
 2. Primeiro vamos ao diretório **backend**
