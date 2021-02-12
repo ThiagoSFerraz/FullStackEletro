@@ -1,9 +1,10 @@
 const express = require("express");
-const Router = express.Router();
-const connection = require("../connection");
+const router = express.Router();
+const connection = require("../../connectionsql");
+const Mensagem = require("../models/mensagem")
 
 
-Router.get("/produtos", (req, res) => {
+router.get("/produtos", (req, res) => {
    connection.query("SELECT * FROM produtos", (err, results) => {
         if (!err) {
             res.json(results);
@@ -13,7 +14,7 @@ Router.get("/produtos", (req, res) => {
     });
 })
 
-Router.get("/pedidos", (req, res) => {
+router.get("/pedidos", (req, res) => {
     connection.query(`SELECT 
     p.quantidade,
     c.nome_cliente,
@@ -32,4 +33,14 @@ Router.get("/pedidos", (req, res) => {
     });
 })
 
-module.exports = Router;
+router.post('/mensagem', async (req, res) => {
+    const { nome, msg } = req.body;
+    res.json(await Mensagem.create({ nome, msg }));
+  })
+
+
+router.get('/mensagem', async (req, res) => {
+    res.json(await Mensagem.find());
+  });
+
+module.exports = router;
