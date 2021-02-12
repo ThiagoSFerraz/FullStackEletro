@@ -1,10 +1,11 @@
 import { lazy, Suspense } from "react";
-import "../components/lojas/style.css";
+import "../components/contato/style.css";
 import React from "react";
+import Mensagem from "../components/contato/mensagem"
 
-const ListaLoja = lazy(() => import("../components/lojas"));
+const ListaLoja = lazy(() => import("../components/contato"));
 
-export default function Lojas() {
+export default function Contato() {
   return (
     <div className="bg-dark fundo">
       <div className="container-fluid bg-dark">
@@ -18,6 +19,9 @@ export default function Lojas() {
           fallback={<h2 className="text-white text-center">Carregando...</h2>}>
           <ListaLoja />
         </Suspense>
+        
+          <Mensagem />
+        
       </div>
     </div>
   );

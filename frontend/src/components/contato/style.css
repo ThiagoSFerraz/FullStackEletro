@@ -3,6 +3,9 @@
     background-color: #343a40;
     background-size: 100vh;
 }
+.borda{
+    border: solid 1px rgb(110, 0, 184);
+}
 
 @media(max-width: 480px){
     .fundo{

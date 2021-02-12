@@ -24,7 +24,7 @@ function BaseMenu(props) {
                         <Nav.Link className="px-4 text-white" as={Link} href="/pedidos" to="/pedidos" >Pedidos</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link className="px-4 text-white" as={Link} href="/lojas" to="/lojas" >Nossas lojas</Nav.Link>
+                        <Nav.Link className="px-4 text-white" as={Link} href="/contato" to="/contato" >Entre em contato</Nav.Link>
                     </Nav.Item>
                 </Nav>
             </Navbar.Collapse>
