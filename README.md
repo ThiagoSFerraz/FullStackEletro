@@ -1,7 +1,33 @@
-# Bem vindo ao projeto **Full Stack Eletro**
-## Esse projeto tem como propóstio a entregas das atividades de **React back-end e front-end avançado e noSQL(mongodb)** e também como portfólio.
+<h1 align='center'> Full Stack Eletro </h1>
+<p align="center"> 
+<img src="./frontend/src/components/homepage/img/atom.png" width="25%"/>
+</p>
+<h2 align="center">🖥️ Versão Web 🖥️</h2>
+<p align="center">
+<img src="./frontend/readmeimg/web.png"/>
+</p>
+<h2 align="center">📱 Versão Web Responsivo: 📱</h2>
+<p align="center">
+<img src="./frontend/readmeimg/web2.png"/>
+</p>
+<hr/>
+<h2 style="font-weight: 600">📜 Sobre o projeto:</h2>
+<p>O <b>Full Stack Eletro</b> foi criado durante o curso de <b>desenvolvimento Full-Stack</b> da Recodepro com intuíto de aprendizado de funcionalidades das tecnologias e também como portfólio.
+O projeto simula um E-Commerce, porém, note que algumas funcionalidades como cadastramento ou login não são aplicadas, assim como o carrinho.
+</p>
+<h2 style="font-weight: 600">⚙️ Tecnologias aplicadas:</h2> 
+<ul>
+<li>Node.JS (Backend)</li>
+<li>React.JS (Front-end)</li>
+<li>MySQL (Banco de dados relacional)</li>
+<li>NoSQL (Banco de dados não relacional)</li>
+<li>Server Side Rendering (SSR)</li>
+<li>CSS</li>
+<li>Bootstrap (sistema de grid e de cores)</li>
+</ul>
+<hr>
+<h1 style="font-weight: 600" align="center">🚀 Como rodar o projeto 🚀</h1>
 
-## **Como rodar o projeto:**
 1. Clone o projeto
 2. Primeiro vamos ao diretório **backend**
 3. Execute a instalação dos módulos necessários com o comando ***npm install***
@@ -12,31 +38,4 @@
 
 - Vale dizer que você precisa importar os arquivos de banco de dados para seu MySQL, o arquivo **db.sql** dentro de **backend** tem o conteúdo necessário
 - E mantenha também o **NoSQL** ativo.
-#
-## Sobre **MySQL e NoSQL**:
-O motivo dessa aplicação ter os dois tipos de banco de dados é como foi dito isso é também para portfólio, temos em **mysql** consulta join. E em **NoSQL** temos o Create e Select
-#
-## Sobre avaliação de projetos **RECODE**:
-## **React Front-end avançado**:
-### Os critérios de avaliação do projeto Front-end avançado estão em:
-- [**Produtos**](https://github.com/ThiagoSFerraz/FullStackEletro/blob/main/frontend/src/pages/produtos.js)
-- - No carregamento de imagem dos Produtos
-- [**Contato**](https://github.com/ThiagoSFerraz/FullStackEletro/blob/main/frontend/src/pages/contato.js)
-- - No carregamento da lista de "locais que atendemos"
-- [**Pedidos**](https://github.com/ThiagoSFerraz/FullStackEletro/blob/main/frontend/src/pages/pedidos.js)
-- - No retorno dos pedidos
-#
-## **React Back-end avançado**:
-### O Critério de avaliação do projeto Back-end está em:
-- [**Produtos**](https://github.com/ThiagoSFerraz/FullStackEletro/blob/main/frontend/src/pages/produtos.js)
-- - Carregando a Lista de categorias em **SSR**
-### Para rodar o **SSR** na inicialização do servidor **frontend** ao invés de executar o comando **npm start** execute o comando **npm run dev**
-#
-## **MongoDb - NoSQL**:
-Os critérios de avaliação do projeto MongoDB estão em:
-- [**Conexão**](https://github.com/ThiagoSFerraz/FullStackEletro/tree/main/backend/src/database/mongo.js) Conexão com mongoDB
-- [**Modelo de Mensagem**](https://github.com/ThiagoSFerraz/FullStackEletro/blob/main/backend/src/models/mensagem.js)
-- [**Dados**](https://github.com/ThiagoSFerraz/FullStackEletro/blob/main/backend/src/routes/consultas.js) Recebendo e Enviando dados em JSON
-- [**Formulário**](https://github.com/ThiagoSFerraz/FullStackEletro/blob/main/frontend/src/components/contato/mensagem/index.js) Esse é o local no frontend que os dados são enviados e renderizados
-- - Quando feito esse processo o *component* de mensagem é mandado para a página de [**Contato**](https://github.com/ThiagoSFerraz/FullStackEletro/blob/main/frontend/src/pages/contato.js) como Mensagem()
-  
+
