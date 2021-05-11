@@ -38,4 +38,3 @@ O projeto simula um E-Commerce, porém, note que algumas funcionalidades como ca
 
 - Vale dizer que você precisa importar os arquivos de banco de dados para seu MySQL, o arquivo **db.sql** dentro de **backend** tem o conteúdo necessário
 - E mantenha também o **NoSQL** ativo.
-
